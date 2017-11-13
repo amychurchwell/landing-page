@@ -2,6 +2,21 @@
   font-family: sans-serif;
 }
 
+.logo{
+  float: left;
+  width: 100px;
+  height: auto;
+  margin: 15px;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: right;
+  margin: 15px;
+}
+
 .header{
   background-image: url("../img/header.jpg");
   background-size: cover;
@@ -43,12 +58,11 @@ hr{
   display: inline-block;
   padding: 50px;
   text-align: center;
+  width: 100%;
 }
 
-.info-2 {
+.section{
   display: inline-block;
-  padding: 50px;
-  text-align: center;
 }
 
 .icon{
@@ -73,7 +87,7 @@ hr{
 }
 
 .text {
-  display: inline-block;
+  display: block;
   width: 300px;
   margin-left: 58px;
   margin-right: 150px;
@@ -81,6 +95,6 @@ hr{
 
 .icon1 {
   display: inline-block;
-  float: left;
-  width: 500px;
+  margin-left: 58px;
+  margin-right: 150px;
 }
