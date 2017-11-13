@@ -2,20 +2,50 @@
   font-family: sans-serif;
 }
 
+.bottom-head{
+  left: 48%;
+  background-color: transparent;
+  position: relative;
+  top: 42%;
+}
+
 .logo{
   float: left;
   width: 100px;
   height: auto;
   margin: 15px;
+  filter: grayscale(100%);
+}
+
+.navbar{
+  display: inline;
+  position: absolute;
+  margin: 15px;
+  right: 0;
+  color: white;
 }
 
 .navbar a{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  float: right;
   margin: 15px;
 }
+
+a:hover {
+  color: pink;
+}
+
+button{
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  background: pink;
+  border: none;
+  border-radius: 10px;
+}
+
 
 .header{
   background-image: url("../img/header.jpg");
@@ -23,10 +53,20 @@
   background-position: center;
   height: 600px;
   width: 100%;
+  position: relative;
 
 }
 
-.title {
+.header::after {
+    content: "";
+    border: 25px solid rgba(255, 0, 0, 0);
+    border-top-color: #484050;
+    position: absolute;
+    top: 100%;
+    left: 48%;
+}
+
+.head {
   color: white;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -35,14 +75,28 @@
   top: 200px;
 }
 
+.title {
+  box-sizing: border-box;
+}
+
 .title h2{
-  color: hsla(0, 0%, 65%, 0.75);
-  text-align: center;
+  color: rgba(255, 255, 255, 0.79);
   font-family: 'Open Sans', sans-serif;
   font-size: 58px;
-  margin-top: 0;
-  margin-bottom: -10px;
-  position: relative;
+  margin-bottom: -17px;
+}
+
+.title h3{
+  color: rgba(255, 255, 255, 0.79);
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -17px;
+  margin-bottom: 31px;
+  font-size: 65px;
+}
+
+.title p{
+  font-style: italic;
+  font-size: 21px;
 }
 
 hr{
